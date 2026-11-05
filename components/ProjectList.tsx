@@ -2,14 +2,18 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    title: "Project One",
-    description: "A description of your first project.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    title: "Pack & Go",
+    description:
+      "A travel packing planner that helps users plan trips by entering their destination, travel dates, and planned activities, then create and save personalized packing lists.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/ghrwn/pack-and-go",
   },
   {
-    title: "Project Two",
-    description: "A description of your second project.",
-    technologies: ["JavaScript", "HTML", "CSS"],
+    title: "CSE 341 Project 1",
+    description:
+      "A backend web services project built with Node.js and Express, using MongoDB for data storage and Passport for authentication, with Swagger documentation for API endpoints.",
+    technologies: ["Node.js", "Express", "MongoDB", "Passport", "Swagger"],
+    link: "https://github.com/ghrwn/cse341-project1",
   },
 ];
 
@@ -27,6 +31,7 @@ export default function ProjectList() {
             title={project.title}
             description={project.description}
             technologies={project.technologies}
+            link={project.link}
           />
         ))}
       </div>
